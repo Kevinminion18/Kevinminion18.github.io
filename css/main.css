@@ -42,6 +42,13 @@ ul.posts li {
     list-style: none;
 }
 
+.image{ 
+        margin-top: 100px; 
+        width:200px; 
+        height:200px; 
+        border-radius:200px; 
+}
+
 /* CSS property for content section */
 .columnA {
     float: left;
