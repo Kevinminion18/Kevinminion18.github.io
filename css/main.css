@@ -45,13 +45,16 @@ ul.posts li {
 /* CSS property for content section */
 .columnA {
     float: left;
-    width: 31%;
+    width: 100px;
     /*padding: 15px;*/
+    height:500px;
     text-align:justify;
+    background:red;
 }
 .columnB {
     margin-left: 100px;
     /*padding: 15px;*/
+    height:500px;
     text-align:justify;
 }
 h2 {
