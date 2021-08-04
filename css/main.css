@@ -24,7 +24,7 @@ h1 {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
 p {
-    font-size: 1.5em;
+    font-size: 1em;
     line-height: 1.4em;
     color: #333;
 }
@@ -67,15 +67,3 @@ h2 {
     color:green;
     text-align:center;
 }
-             
-/* Media query to set website layout according to screen size 
-@media screen and (max-width:600px) {
-    .columnA, .columnB {
-    width: 50%;
-    }
-}
-@media screen and (max-width:400px) {
-    .columnA, .columnB {
-    width: 100%;
-    }
-} */
