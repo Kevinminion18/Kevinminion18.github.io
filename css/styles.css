@@ -72,9 +72,10 @@ nav a {
 }
 
 .profile-image {
-  max-width: 300px;
+  max-width: 100%;
   border-radius: 50%;
-  height: 250px;
+  height: 200px;
+  box-sizing: border-box;
 }
 
 .display-flex {
