@@ -99,8 +99,12 @@ header, .display-flex, .image-container, #profile-section li, #profile-section {
   align-items: start;
 }
 
-.profile-image, span.fas.fa-graduation-cap {
+span.fas.fa-graduation-cap {
   margin-right: 20px;
+}
+
+.profile-image {
+  margin-right: 50px;
 }
 
 .course, .institution {
