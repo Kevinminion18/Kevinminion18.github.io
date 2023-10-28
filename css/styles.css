@@ -1,0 +1,180 @@
+/*
+  Kevin Shao
+  10/19/2023
+  Section AD: Marina Wooden
+
+  This is the styles.css page for my portfolio of web development work in CSE154.
+  It is used by all pages in my portfolio.
+*/
+body {
+  background-color: white;
+  font-family: "Helvetica", sans-serif;
+  margin: 20px;
+}
+
+header {
+  height: 300px;
+  background-image: url("img/headerimage.jpg");
+  background-size: cover;
+  background-position: center center;
+  justify-content: center;
+}
+
+.justified {
+  text-align: justify;
+}
+
+img {
+  width: 450px;
+  height: auto;
+}
+
+.image-container {
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-evenly;
+}
+
+.image-box {
+  flex: 1;
+  max-width: 450px;
+}
+
+.h1-header {
+  color: white;
+  font-family: 'Exo 2', sans-serif;
+}
+
+nav {
+  margin-inline: 0px;
+  margin-block: 19.92px;
+  float: right;
+  list-style-type: none;
+}
+
+nav ul {
+  margin: 0px;
+}
+
+nav li {
+  display: inline;
+  font-family: 'Oswald', sans-serif;
+}
+
+nav li:last-child {
+  margin-right: 0;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+#profile-section > section {
+  flex-direction: column;
+}
+
+.profile-image {
+  max-width: 300px;
+  border-radius: 50%;
+  height: 250px;
+}
+
+.display-flex {
+  justify-content: space-between;
+}
+
+header, .display-flex, .image-container, #profile-section li, #profile-section {
+  display: flex;
+}
+
+#profile-section, header, .display-flex {
+  align-items: center;
+}
+
+#profile-section ul {
+  padding-inline-start: 5px;
+}
+
+#profile-section li {
+  align-items: start;
+}
+
+.profile-image, span.fas.fa-graduation-cap {
+  margin-right: 20px;
+}
+
+.course, .institution {
+  margin: 0;
+}
+
+.course {
+  margin-bottom: 5px; /* Space between institution and course */
+}
+
+.institution {
+  font-size: 15px;
+}
+
+#schedule {
+  border-collapse: collapse;
+}
+
+#profile-section, #schedule {
+  margin-top: 20px;
+}
+
+#schedule th, #schedule td {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+#profile-section li, .controls {
+  margin-bottom: 20px;
+}
+
+nav li, .controls * {
+  margin-right: 10px;
+}
+
+.shaded {
+  background-color: grey;
+}
+
+td.has-text:after {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.details-container, td.has-text:after {
+  display: block;
+}
+
+.has-text:before {
+  transform: translateY(-50%);
+}
+
+td.has-text:after, .has-text:before {
+  content: attr(data-text);
+}
+
+.text-section {
+  left: 0;
+}
+
+#schedule, .has-text:before, .text-section {
+  width: 100%;
+}
+
+.centered, #schedule th, #schedule td, .has-text, .has-text:before, .text-section {
+  text-align: center;
+}
+
+td.has-text:after, .has-text:before, .text-section {
+  position: absolute;
+}
+
+body, #schedule, .has-text, td {
+  position: relative;
+}
