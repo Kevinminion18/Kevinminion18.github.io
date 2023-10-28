@@ -63,6 +63,11 @@ nav a {
   text-decoration: none;
 }
 
+#profile-section {
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
 #profile-section > section {
   flex-direction: column;
 }
