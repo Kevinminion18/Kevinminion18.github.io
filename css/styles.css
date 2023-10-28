@@ -14,7 +14,7 @@ body {
 
 header {
   height: 300px;
-  background-image: url("img/headerimage.jpg");
+  background-image: url("../img/headerimage.jpg");
   background-size: cover;
   background-position: center center;
   justify-content: center;
