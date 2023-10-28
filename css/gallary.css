@@ -1,0 +1,93 @@
+body {
+  background-color: white;
+  font-family: "Helvetica", sans-serif;
+  margin: 20px;
+  position: relative;
+}
+
+header {
+  height: 300px;
+  background-image: url("img/headerimage.jpg");
+  background-size: cover;
+  background-position: center center;
+  justify-content: center;
+}
+
+.centered {
+  text-align: center;
+}
+
+.justified {
+  text-align: justify;
+}
+
+img {
+  width: 450px;
+}
+
+.image-container {
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-evenly;
+}
+
+.image-box {
+  flex: 1;
+  max-width: 450px;
+}
+
+.h1-header {
+  color: white;
+  font-family: 'Exo 2', sans-serif;
+}
+
+nav {
+  margin-inline: 0px;
+  margin-block: 19.92px;
+  float: right;
+  list-style-type: none;
+}
+
+nav ul {
+  margin: 0px;
+}
+
+nav li {
+  display: inline;
+  margin-right: 10px;
+  font-family: 'Oswald', sans-serif;
+}
+
+nav li:last-child {
+  margin-right: 0;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+.profile-section {
+  margin-top: 20px;
+}
+
+.profile-image {
+  max-width: 150px;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.display-flex {
+  justify-content: space-between;
+}
+
+header, .display-flex, .image-container, .profile-section {
+  display: flex;
+}
+
+header, .display-flex, .profile-section {
+  align-items: center;
+}
+
+img, .profile-image {
+  height: auto;
+}
