@@ -80,6 +80,7 @@ nav a {
 }
 
 .display-flex {
+  position: fixed;
   justify-content: space-between;
 }
 
