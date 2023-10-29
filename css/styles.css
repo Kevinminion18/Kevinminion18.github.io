@@ -32,7 +32,7 @@ nav {
   margin-right: 16px;
 }
 
-#navbar a {
+nav a {
   float: left;
   display: block;
   text-align: center;
@@ -42,7 +42,7 @@ nav {
   font-family: 'Oswald', sans-serif;
 }
 
-#navbar a:hover {
+nav a:hover {
   background-color: #f2f2f2;
 }
 
