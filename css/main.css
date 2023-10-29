@@ -3,6 +3,13 @@ body {
     width: 70%;
 }
 
+body {
+    background-color: white;
+    font-family: "Helvetica", sans-serif;
+    margin: 20px;
+    position: relative;
+  }
+
 header {
     margin-top: 50px;
     height: 300px;
