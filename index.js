@@ -4,17 +4,38 @@
 
   function init() {
     // Get the elements
-    var hoverTarget = document.querySelector('.hover-target');
-    var groupImage = document.getElementById('groupImage');
+    let hoverTarget = document.querySelector('.hover-target');
+    let groupImage = document.getElementById('groupImage');
+    let isOverImage = false;  // flag to track if we're over the image
 
-    // Show image on mouseover
     hoverTarget.addEventListener('mouseover', function() {
-        groupImage.style.display = 'block';
+      groupImage.style.display = 'block';
     });
 
-    // Hide image on mouseout
-    hoverTarget.addEventListener('mouseout', function() {
-        groupImage.style.display = 'none';
+    hoverTarget.addEventListener('mouseout', function(e) {
+      // Check if we moved to the image
+      if (e.relatedTarget === groupImage) {
+        return;
+      }
+      hideImageWithDelay();
     });
+
+    groupImage.addEventListener('mouseover', function() {
+      isOverImage = true;
+    });
+
+    groupImage.addEventListener('mouseout', function(e) {
+      isOverImage = false;
+      hideImageWithDelay();
+    });
+
+    function hideImageWithDelay() {
+      // Delay hiding the image to check if we're moving to the other element
+      setTimeout(function() {
+        if (!isOverImage) {
+          groupImage.style.display = 'none';
+        }
+      }, 1000);
+    }
   }
 })();
