@@ -1,5 +1,8 @@
 'use strict';
 (function() {
+  window.addEventListener('load', init);
+
+  function init() {
     // Get the elements
     var hoverTarget = document.querySelector('.hover-target');
     var groupImage = document.getElementById('groupImage');
@@ -13,4 +16,5 @@
     hoverTarget.addEventListener('mouseout', function() {
         groupImage.style.display = 'none';
     });
+  }
 })();
