@@ -5,8 +5,8 @@
   function init() {
     // Get the elements
     let hoverTarget = document.querySelector('.hover-target');
-    let groupImage = document.getElementById('groupImage');
-    let isOverImage = false;  // flag to track if we're over the image
+    let groupImage = id('groupImage');
+    let isOverImage = false;
 
     hoverTarget.addEventListener('mouseover', function() {
       groupImage.style.display = 'block';
@@ -37,5 +37,15 @@
         }
       }, 1000);
     }
+  }
+
+  /**
+   * A function to return the element that has the ID attribute with the
+   * specified value.
+   * @param {string} name - element ID.
+   * @returns {object} - DOM object associated with id.
+   */
+  function id(name) {
+    return document.getElementById(name);
   }
 })();

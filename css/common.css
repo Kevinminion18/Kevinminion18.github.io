@@ -65,7 +65,7 @@ nav a:hover {
   text-align: center;
 }
 
-.group-image {
-  width: 450px;
+#groupImage {
+  width: 500px;
   height: auto;
 }
