@@ -64,3 +64,8 @@ nav a:hover {
 .centered {
   text-align: center;
 }
+
+.group-image {
+  width: 450px;
+  height: auto;
+}
