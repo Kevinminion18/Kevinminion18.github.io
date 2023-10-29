@@ -1,58 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<title>Kevin Shao</title>
 		<!-- link to main stylesheet -->
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
 	</head>
 	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/experience">Experience</a></li>
-			<li><a href="/project">Project</a></li>
-        		<li><a href="/research">Research</a></li>
-			<!-- <li><a href="/activity">Activity</a></li> -->
-        		<li><a href="/cv">CV</a></li>
-			<li><a href="/Contact">Contact</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-			<p1>Direction of arrival estimation with nonuniform sparse arrays (Professor: Lee C Potter)</p1>
+		<section id="nav-bar">
+      <h1>Kevin Shao</h1>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/experience">Experience</a>
+        <a href="/project">Project</a>
+        <a href="/research">Research</a>
+        <!--<li><a href="/experience">Experience</a></li> -->
+				<a href="/cv">CV</a>
+        <a href="/gallary">Gallary</a>
+        <a href="/Contact">Contact</a>
+      </nav>
+    </section>
+    <header>
+      <h1 class="h1-header">EXPERIENCE</h1>
+    </header>
+		<section class="container">
+			<div class="blurb">
+			<h3>Direction of arrival estimation with nonuniform sparse arrays (Professor: Lee C Potter)</h3>
 			<ul>
-                           <li>Experimentally measure the locations of microphones, sampled sound at each location, elevation angles between the signal and microphone</li>
-                           <li>Implement and demonstrate sparse linear and planar arrays designed with constraints and RMSE performance</li>
-                           <li>Compute noise power, CRLB theoretical bound on error variance, MLE estimator of DOA, and PRoM estimator of DOA</li>
-			   <li>Implement the optimized designs to determine the position that could generate the set of angle without aliasing and demonstrate its performance</li>
-                        </ul>  
+				<li>Experimentally measure the locations of microphones, sampled sound at each location, elevation angles between the signal and microphone</li>
+        <li>Implement and demonstrate sparse linear and planar arrays designed with constraints and RMSE performance</li>
+        <li>Compute noise power, CRLB theoretical bound on error variance, MLE estimator of DOA, and PRoM estimator of DOA</li>
+			  <li>Implement the optimized designs to determine the position that could generate the set of angle without aliasing and demonstrate its performance</li>
+			</ul>
 			<hr>
-			<p1>Control and Intelligent Transportations Research Lab (Research scientist: Ekim Yurtsever)</p1>
+			<h3>Control and Intelligent Transportations Research Lab (Research scientist: Ekim Yurtsever)</h3>
 			<ul>
-                           <li>Proposed and developed a small-scale research platform for intelligent transportation systems</li>
-			   <li>Solved various dependencies issues and used OpenPCDet to train the Kitti Datasets</li>
-			   <li>Propose a more sensitive and accurate approach to count the vehicles with ROSBAG extraction simultaneously, instead of using the existed video files processing method</li>
-			   <li>The designed vehicle counting program with yolo algorithm allows to extract bidirectional vehicle counts from a moving observation platform, define the counting area with georeferencing, extract Bird's Eye View (BEV) trajectories of observed vehicles</li>
-			   <video width="480" height="360" controls>
-                               <source src="out_camera_3-processed.mp4" type="video/mp4">
-                           </video>
-
-                        </ul>  
+				<li>Proposed and developed a small-scale research platform for intelligent transportation systems</li>
+			  <li>Solved various dependencies issues and used OpenPCDet to train the Kitti Datasets</li>
+			  <li>Propose a more sensitive and accurate approach to count the vehicles with ROSBAG extraction simultaneously, instead of using the existed video files processing method</li>
+			  <li>The designed vehicle counting program with yolo algorithm allows to extract bidirectional vehicle counts from a moving observation platform, define the counting area with georeferencing, extract Bird's Eye View (BEV) trajectories of observed vehicles</li>
+			  <video width="480" height="360" controls>
+					 <source src="out_camera_3-processed.mp4" type="video/mp4">
+        </video>
+			</ul>
 			<hr>
 			<p1>Machine Learning Application Research (Assistant Professor: Pengtao Xie)</p1>
 			<ul>
-                           <li>A DARTS structure-based machine learning method is proposed, which can learn Spatio-temporal data end-to-end using a spatial model, and thus apply it in the simulation of the model of COVID-Net.</li>
-                           <li>Presented a multi-level optimization framework to formulate LBT which involves three learning stages: teacher learns; teacher teaches student; teacher and student validate themselves.</li>
-                           <li>An efficient algorithm to solve the LBT problem has been developed and applied the approach to neural architecture search on CIFAR-100, CIFAR-10, and ImageNet, where the results demonstrate the effectiveness of our method</li>
-                        </ul>  
-		</div><!-- /.blurb -->
-		</div><!-- /.container -->		
-
-	
-		<footer>
-    		<ul>
-        		<!-- <li><a href="mailto:XXX">email</a></li> -->
-		</ul>
-		</footer>
+				<li>A DARTS structure-based machine learning method is proposed, which can learn Spatio-temporal data end-to-end using a spatial model, and thus apply it in the simulation of the model of COVID-Net.</li>
+        <li>Presented a multi-level optimization framework to formulate LBT which involves three learning stages: teacher learns; teacher teaches student; teacher and student validate themselves.</li>
+        <li>An efficient algorithm to solve the LBT problem has been developed and applied the approach to neural architecture search on CIFAR-100, CIFAR-10, and ImageNet, where the results demonstrate the effectiveness of our method</li>
+			</ul>
+		</div>
+	</section>
+	<footer>
+		<p class="centered">
+			Site created by Kevin Shao. All other attributions cited in page source.
+		</p>
+	</footer>
 	</body>
 </html>
