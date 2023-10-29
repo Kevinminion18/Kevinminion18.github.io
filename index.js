@@ -1,12 +1,12 @@
 'use strict';
 (function() {
+  let isOverImage = false;
   window.addEventListener('load', init);
 
   function init() {
     // Get the elements
     let hoverTarget = document.querySelector('.hover-target');
     let groupImage = id('groupImage');
-    let isOverImage = false;
 
     hoverTarget.addEventListener('mouseover', function() {
       groupImage.style.display = 'block';
