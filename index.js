@@ -17,7 +17,7 @@
       if (e.relatedTarget === groupImage) {
         return;
       }
-      hideImageWithDelay();
+      hideImageWithDelay(groupImage);
     });
 
     groupImage.addEventListener('mouseover', function() {
@@ -26,17 +26,17 @@
 
     groupImage.addEventListener('mouseout', function(e) {
       isOverImage = false;
-      hideImageWithDelay();
+      hideImageWithDelay(groupImage);
     });
+  }
 
-    function hideImageWithDelay() {
-      // Delay hiding the image to check if we're moving to the other element
-      setTimeout(function() {
+  function hideImageWithDelay(groupImage) {
+    // Delay hiding the image to check if we're moving to the other element
+    setTimeout(function() {
         if (!isOverImage) {
-          groupImage.style.display = 'none';
+            groupImage.style.display = 'none';
         }
-      }, 1000);
-    }
+    }, 2000);
   }
 
   /**
