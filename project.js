@@ -8,12 +8,15 @@
 
     learnMore.addEventListener("click", function() {
       // Show the video container
-      console.log("Button clicked");
       id("videoContainer").style.display = "block";
 
       // Play the video
       let video = id("videoElement");
       video.play();
+    });
+
+    id("videoElement").addEventListener("ended", function() {
+      this.parentNode.style.display = "none";
     });
   }
 
