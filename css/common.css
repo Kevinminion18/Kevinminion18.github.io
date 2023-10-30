@@ -97,3 +97,20 @@ nav a:hover {
   font-size: 16px;
 }
 
+.figma-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.figma-container img {
+  width: 150px;
+  height: 300px;
+  padding-right: 35px;
+  padding-top: 20px;
+}
+
+/* Remove padding from the last image */
+.figma-container img:last-child {
+  padding-right: 0;
+}
