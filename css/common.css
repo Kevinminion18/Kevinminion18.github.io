@@ -114,3 +114,17 @@ nav a:hover {
 .figma-container img:last-child {
   padding-right: 0;
 }
+
+#learnMoreBtn {
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  padding: 14px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+#learnMoreBtn:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
