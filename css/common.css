@@ -74,12 +74,19 @@ nav a:hover {
   display: flex;
   justify-content: space-between; /* This will space the items evenly */
   align-items: center;
-  margin-bottom: 10px; /* Adjust as needed */
 }
 
-.position-title,
-.institution,
-.location {
+.position-title {
+  flex: 1.5;
+  justify-content: flex-start;
+}
+
+.institution {
   flex: 1;
   text-align: center;
 }
+
+.location {
+  text-align: right;
+}
+
