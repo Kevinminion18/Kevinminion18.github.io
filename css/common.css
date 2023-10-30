@@ -69,3 +69,17 @@ nav a:hover {
   width: 500px;
   height: auto;
 }
+
+.position-container {
+  display: flex;
+  justify-content: space-between; /* This will space the items evenly */
+  align-items: center;
+  margin-bottom: 10px; /* Adjust as needed */
+}
+
+.position-title,
+.institution,
+.location {
+  flex: 1;
+  text-align: center;
+}
