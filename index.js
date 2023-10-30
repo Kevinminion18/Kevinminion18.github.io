@@ -7,7 +7,6 @@
     // Get the elements
     let hoverTarget = document.querySelector('.hover-target');
     let groupImage = id('groupImage');
-    let learnMore = id('learnMoreBtn');
 
     hoverTarget.addEventListener('mouseover', function() {
       groupImage.style.display = 'block';
@@ -28,15 +27,6 @@
     groupImage.addEventListener('mouseout', function(e) {
       isOverImage = false;
       hideImageWithDelay(groupImage);
-    });
-
-    learnMore.addEventListener("click", function() {
-      // Show the video container
-      id("videoContainer").style.display = "block";
-
-      // Play the video
-      let video = id("videoElement");
-      video.play();
     });
   }
 
