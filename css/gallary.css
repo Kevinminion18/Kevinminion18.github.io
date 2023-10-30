@@ -96,3 +96,10 @@ header, .profile-section {
 img, .profile-image {
   height: auto;
 }
+
+#profile-section {
+  margin-top: 20px;
+  margin-right: 75px;
+  margin-left: 75px;
+  margin-bottom: 30px;
+}
