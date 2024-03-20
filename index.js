@@ -1,33 +1,55 @@
 'use strict';
 (function() {
-  let isOverImage = false;
   window.addEventListener('load', init);
 
   function init() {
     // Get the elements
-    let hoverTarget = document.querySelector('.hover-target');
-    let groupImage = id('groupImage');
+    let sendMessage = id('groupImage');
 
-    hoverTarget.addEventListener('mouseover', function() {
-      groupImage.style.display = 'block';
-    });
+    sendMessage.addEventListener('click', function() {
+      const input = document.getElementById('chat-input');
+      const messageText = input.value.trim();
 
-    hoverTarget.addEventListener('mouseout', function(e) {
-      // Check if we moved to the image
-      if (e.relatedTarget === groupImage) {
-        return;
-      }
-      hideImageWithDelay(groupImage);
+      sendMessageToServer(messageText);
     });
+  }
 
-    groupImage.addEventListener('mouseover', function() {
-      isOverImage = true;
-    });
+  function sendMessageToServer(messageText) {
+    if (messageText !== '') {
+      // Display the user message
+      displayMessage(messageText, 'user-message');
 
-    groupImage.addEventListener('mouseout', function(e) {
-      isOverImage = false;
-      hideImageWithDelay(groupImage);
-    });
+      // Clear the input field
+      document.getElementById('chat-input').value = '';
+
+      // Send the message to the server using the POST request
+      fetch('/chat-message', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ message: messageText }),
+      })
+      .then(response => response.json())
+      .then(data => {
+        // Display the chatbot's response
+        displayMessage(data.message, 'bot-message');
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+      });
+    }
+  }
+
+  function displayMessage(text, className) {
+    const messageDiv = document.createElement('div');
+    messageDiv.classList.add('message', className);
+    messageDiv.textContent = text;
+    id('messages').appendChild(messageDiv);
+
+    // Scroll to the bottom of the message area to show the newest message
+    const messageArea = id('chat-box-body');
+    messageArea.scrollTop = messageArea.scrollHeight;
   }
 
   /**
