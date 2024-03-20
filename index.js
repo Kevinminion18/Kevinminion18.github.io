@@ -9,7 +9,6 @@
     sendMessage.addEventListener('click', function() {
       const input = document.getElementById('chat-input');
       const messageText = input.value.trim();
-
       sendMessageToServer(messageText);
     });
   }
