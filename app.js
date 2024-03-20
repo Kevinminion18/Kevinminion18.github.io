@@ -16,7 +16,6 @@ app.use(express.json()); // built-in middleware
 // for multipart/form-data (required with FormData)
 app.use(multer().none()); // requires the "multer" module
 
-import express from 'express';
 import { config } from 'dotenv';
 import { Configuration, OpenAIApi } from 'openai';
 
@@ -32,7 +31,7 @@ const openAi = new OpenAIApi(new Configuration({
 app.post('/chat-message', async (req, res) => {
   try {
     const response = await openAi.createCompletion({
-      model: 'text-davinci-003', // Ensure to replace with the desired model version
+      model: 'gpt-4-turbo-preview', // Ensure to replace with the desired model version
       prompt: req.body.message, // User's message from the website
       temperature: 0.7,
       max_tokens: 150,
