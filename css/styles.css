@@ -127,17 +127,8 @@ header, #profile-section li, #profile-section {
   font-size: 15px;
 }
 
-#schedule {
-  border-collapse: collapse;
-}
-
-#profile-section, #schedule {
+#profile-section {
   margin-top: 20px;
-}
-
-#schedule th, #schedule td {
-  border: 1px solid black;
-  padding: 5px;
 }
 
 #profile-section li, .controls {
@@ -152,38 +143,15 @@ header, #profile-section li, #profile-section {
   background-color: grey;
 }
 
-td.has-text:after {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 10;
-}
-
-.details-container, td.has-text:after {
+.details-container {
   display: block;
 }
 
-.has-text:before {
-  transform: translateY(-50%);
-}
-
-td.has-text:after, .has-text:before {
-  content: attr(data-text);
-}
-
-#schedule, .has-text:before {
-  width: 100%;
-}
-
-.centered, #schedule th, #schedule td, .has-text, .has-text:before {
+.centered {
   text-align: center;
 }
 
-td.has-text:after, .has-text:before {
-  position: absolute;
-}
-
-body, #schedule, .has-text, td {
+body, td {
   position: relative;
 }
 
@@ -192,6 +160,7 @@ body, #schedule, .has-text, td {
   justify-content: space-between;
   margin-top: 20px;
 }
+
 .column {
   width: 45%;
   text-align: left;
