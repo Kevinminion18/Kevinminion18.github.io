@@ -201,7 +201,7 @@ body, td {
   line-height: 1.5;
 }
 
-.profile {
+div #profile {
   display: flex;
   flex-direction: column;
   align-items: center;
