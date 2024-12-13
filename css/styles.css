@@ -110,6 +110,8 @@ header, #profile-section li, #profile-section {
 
 .fa-solid.fa-robot, .fa-solid.fa-flask {
   font-size: 26.4px;
+  width: 26.4px;
+  height: 26.4px;
   margin-right: 15px;
 }
 
