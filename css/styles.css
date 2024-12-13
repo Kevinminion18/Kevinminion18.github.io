@@ -4,14 +4,14 @@ body {
   margin: 20px;
 }
 
-header {
+/* header {
   margin-top: 50px;
   height: 300px;
   background-image: url("../img/headerimage.jpg");
   background-size: cover;
   background-position: center center;
   justify-content: center;
-}
+} */
 
 h1, h2, h3 {
   font-weight: bold;
@@ -61,7 +61,6 @@ nav a:hover {
 }
 
 #profile-section {
-  display: flex; /* Make the profile section a flex container */
   flex-direction: row; /* Align image and text side by side */
   align-items: flex-start; /* Align items at the top */
   margin-right: 105px;
@@ -71,7 +70,7 @@ nav a:hover {
 }
 
 #profile-section > section {
-  flex: 0 0 70%; /* Text occupies 60% of the width */
+  flex: 0 0 70%;
   display: flex;
   flex-direction: column;
 }
@@ -133,7 +132,7 @@ header, #profile-section li, #profile-section {
 }
 
 #profile-section {
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 #profile-section li, .controls {
