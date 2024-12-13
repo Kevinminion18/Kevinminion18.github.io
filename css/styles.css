@@ -172,13 +172,12 @@ div#profile {
   text-align: center;
 }
 
-.email {
+.email, .university {
   color: #1a73e8;
-  font-size: 1em;
   margin: 5px 0;
 }
 
-.email a {
+.email a, .university a {
   text-decoration: none;
   color: inherit;
 }
@@ -212,4 +211,15 @@ div#profile {
   margin-left: 50px;
   margin-bottom: 30px;
   gap: 35px;
+}
+
+.email, .position, .university {
+  font-size: 1.5em;
+  font-family: "Encode Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+  margin: 10px 0;
 }
