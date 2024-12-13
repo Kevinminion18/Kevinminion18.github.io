@@ -109,7 +109,6 @@ header, #profile-section li, #profile-section {
 
 .fa-solid.fa-robot {
   font-size: 26.4px;
-  margin-right: 20px;
 }
 
 .profile-image {
@@ -172,19 +171,15 @@ td.has-text:after, .has-text:before {
   content: attr(data-text);
 }
 
-.text-section {
-  left: 0;
-}
-
-#schedule, .has-text:before, .text-section {
+#schedule, .has-text:before {
   width: 100%;
 }
 
-.centered, #schedule th, #schedule td, .has-text, .has-text:before, .text-section {
+.centered, #schedule th, #schedule td, .has-text, .has-text:before {
   text-align: center;
 }
 
-td.has-text:after, .has-text:before, .text-section {
+td.has-text:after, .has-text:before {
   position: absolute;
 }
 
