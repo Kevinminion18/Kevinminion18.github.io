@@ -108,7 +108,7 @@ header, #profile-section li, #profile-section {
   margin-right: 15px;
 }
 
-.fa-solid.fa-robot {
+.fa-solid.fa-robot, .fa-solid.fa-flask {
   font-size: 26.4px;
   margin-right: 15px;
 }
