@@ -286,3 +286,34 @@ div#profile {
   font-size: 0.9em;
   margin-bottom: 5px;
 }
+
+/* Timeline container */
+.timeline-container {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+}
+
+/* Timeline styling */
+.timeline {
+  flex: 0 0 40px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.circle {
+  width: 12px;
+  height: 12px;
+  background-color: #1a73e8; /* Blue color */
+  border-radius: 50%;
+  border: 2px solid #1a73e8;
+  margin: 10px 0;
+}
+
+.line {
+  width: 2px;
+  height: 60px;
+  background-color: #1a73e8;
+}
