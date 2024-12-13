@@ -67,18 +67,20 @@ nav a:hover {
   margin-right: 105px;
   margin-left: 105px;
   margin-bottom: 30px;
+  gap: 20px;
 }
 
 #profile-section > section {
+  flex: 0 0 70%; /* Text occupies 60% of the width */
+  display: flex;
   flex-direction: column;
 }
 
 .profile-image {
-  flex: 0 0 40%;
+  flex: 0 0 30%;
   max-width: 100%;
   border-radius: 50%;
-  height: 250px;
-  width: 250px;
+  height: auto;
   box-sizing: border-box;
 }
 
