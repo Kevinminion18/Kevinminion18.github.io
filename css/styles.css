@@ -103,12 +103,12 @@ header, #profile-section li, #profile-section {
   align-items: start;
 }
 
-fas.fa-graduation-cap {
+.fas.fa-graduation-cap {
   font-size: 26.4px;
   margin-right: 20px;
 }
 
-fa-solid.fa-robot {
+.fa-solid.fa-robot {
   font-size: 26.4px;
   margin-right: 20px;
 }
