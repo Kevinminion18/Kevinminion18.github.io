@@ -4,15 +4,6 @@ body {
   margin: 20px;
 }
 
-/* header {
-  margin-top: 50px;
-  height: 300px;
-  background-image: url("../img/headerimage.jpg");
-  background-size: cover;
-  background-position: center center;
-  justify-content: center;
-} */
-
 h1, h2, h3 {
   font-weight: bold;
   margin: 0;
@@ -44,11 +35,6 @@ img {
   background-color: white;
   display: flex;
 }
-
-/* .h1-header {
-  color: white;
-  font-family: 'Exo 2', sans-serif;
-} */
 
 nav {
   margin-left: auto;
@@ -99,8 +85,6 @@ div#about {
   height: auto; /* Maintain aspect ratio */
   box-sizing: border-box;
 }
-
-/* header, */
 
 #profile-section li, #profile-section {
   display: flex;
@@ -208,4 +192,24 @@ div#profile {
   font-variation-settings:
     "wdth" 100;
   margin: 10px 0;
+}
+
+#selected-project {
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-bottom: 30px;
+  gap: 35px;
+}
+
+#teaching {
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-bottom: 30px;
+  gap: 35px;
 }
