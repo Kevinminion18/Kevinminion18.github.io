@@ -223,3 +223,67 @@ div#profile {
     "wdth" 100;
   margin: 10px 0;
 }
+
+#teaching-section h2 {
+  font-size: 1.8em;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Card styling */
+.teaching-card {
+  display: flex;
+  align-items: flex-start;
+  margin: 20px 0;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+/* Logo styling */
+.teaching-logo {
+  flex: 0 0 60px;
+  margin-right: 20px;
+}
+
+.teaching-logo img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Details styling */
+.teaching-details {
+  flex: 1;
+}
+
+.teaching-details h3 {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 0 0 10px;
+}
+
+.teaching-details .organization {
+  font-size: 1em;
+  color: #6b6b6b;
+  margin: 0;
+}
+
+.teaching-details .date-location {
+  font-size: 0.9em;
+  color: #9a9a9a;
+  margin: 5px 0 10px;
+}
+
+.teaching-details ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.teaching-details ul li {
+  font-size: 0.9em;
+  margin-bottom: 5px;
+}
