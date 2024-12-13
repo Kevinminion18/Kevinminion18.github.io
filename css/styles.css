@@ -103,15 +103,10 @@ header, #profile-section li, #profile-section {
   align-items: start;
 }
 
-.fas.fa-graduation-cap {
-  font-size: 26.4px;
-  margin-right: 15px;
-}
-
-.fa-solid.fa-robot, .fa-solid.fa-flask {
-  font-size: 26.4px;
-  width: 26.4px;
-  height: 26.4px;
+.fa-solid.fa-robot, .fas.fa-graduation-cap{
+  font-size: 26.5px;
+  width: 33px;
+  height: 26.5px;
   margin-right: 15px;
 }
 
@@ -146,15 +141,7 @@ header, #profile-section li, #profile-section {
 .shaded {
   background-color: grey;
 }
-li span {
-  display: inline-block;
-  width: 26px;
-  height: 26px;
-  font-size: 26px;
-  text-align: center;
-  line-height: 26px;
-  margin-right: 15px;
-}
+
 .details-container {
   display: inline-block;
 }
