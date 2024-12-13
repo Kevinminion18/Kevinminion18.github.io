@@ -115,7 +115,7 @@ header, #profile-section li, #profile-section {
   align-items: start;
 }
 
-.fa-solid.fa-robot, .fas.fa-graduation-cap{
+.fa-solid.fa-robot, .fas.fa-graduation-cap {
   font-size: 26.5px;
   width: 33px;
   height: 26.5px;
@@ -162,7 +162,7 @@ body, td {
   position: relative;
 }
 
-.columns {
+.edu-interest {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
