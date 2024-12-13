@@ -100,7 +100,9 @@ nav a:hover {
   box-sizing: border-box;
 }
 
-header, #profile-section li, #profile-section {
+/* header, */
+
+#profile-section li, #profile-section {
   display: flex;
 }
 
@@ -204,4 +206,15 @@ body, td {
   flex-direction: column;
   align-items: center;
   text-align: center;
+}
+
+.email {
+  color: #1a73e8; /* Google blue */
+  font-size: 1em;
+  margin: 5px 0;
+}
+
+.email a {
+  text-decoration: none;
+  color: inherit;
 }
