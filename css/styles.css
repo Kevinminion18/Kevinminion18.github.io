@@ -61,6 +61,9 @@ nav a:hover {
 }
 
 #profile-section {
+  display: flex; /* Make the profile section a flex container */
+  flex-direction: row; /* Align image and text side by side */
+  align-items: flex-start; /* Align items at the top */
   margin-right: 105px;
   margin-left: 105px;
   margin-bottom: 30px;
@@ -71,6 +74,7 @@ nav a:hover {
 }
 
 .profile-image {
+  flex: 0 0 40%;
   max-width: 100%;
   border-radius: 50%;
   height: 250px;
