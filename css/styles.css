@@ -76,7 +76,7 @@ nav a:hover {
   margin-right: 50px;
   margin-left: 50px;
   margin-bottom: 30px;
-  gap: 20px;
+  gap: 35px;
 }
 
 #about {
@@ -172,8 +172,15 @@ body, td {
   margin-top: 20px;
 }
 
-.column {
+.column1 {
   width: 45%;
+  flex: 0 0 40%;
+  text-align: left;
+}
+
+.column2 {
+  width: 45%;
+  flex: 0 0 60%;
   text-align: left;
 }
 
