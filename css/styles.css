@@ -36,10 +36,19 @@ img {
   margin-left: 0px;
 }
 
-.h1-header {
+#nav-bar {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  display: flex;
+}
+
+/* .h1-header {
   color: white;
   font-family: 'Exo 2', sans-serif;
-}
+} */
 
 nav {
   margin-left: auto;
@@ -61,15 +70,16 @@ nav a:hover {
 }
 
 #profile-section {
-  flex-direction: row; /* Align image and text side by side */
-  align-items: flex-start; /* Align items at the top */
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
   margin-right: 105px;
   margin-left: 105px;
   margin-bottom: 30px;
   gap: 20px;
 }
 
-#profile-section > section {
+.about {
   flex: 0 0 70%;
   display: flex;
   flex-direction: column;
@@ -81,15 +91,6 @@ nav a:hover {
   border-radius: 50%;
   height: auto;
   box-sizing: border-box;
-}
-
-#nav-bar {
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: white;
-  display: flex;
 }
 
 header, #profile-section li, #profile-section {
