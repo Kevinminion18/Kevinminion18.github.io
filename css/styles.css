@@ -218,3 +218,12 @@ body, #schedule, .has-text, td {
   margin-bottom: 20px;
 }
 
+.column ul li span.fas {
+  margin-right: 10px;
+  color: #000;
+}
+
+.column ul li {
+  line-height: 1.5;
+}
+
