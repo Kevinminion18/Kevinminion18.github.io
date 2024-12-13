@@ -104,10 +104,12 @@ header, #profile-section li, #profile-section {
 }
 
 span.fas.fa-graduation-cap {
+  font-size: 26.4px;
   margin-right: 20px;
 }
 
 span.fa-solid.fa-robot {
+  font-size: 26.4px;
   margin-right: 20px;
 }
 
