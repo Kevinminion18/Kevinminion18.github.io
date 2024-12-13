@@ -170,17 +170,16 @@ body, td {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
+  gap:30px;
 }
 
 .column1 {
-  width: 45%;
-  flex: 0 0 40%;
+  flex: 0 0 45%;
   text-align: left;
 }
 
 .column2 {
-  width: 45%;
-  flex: 0 0 60%;
+  flex: 0 0 55%;
   text-align: left;
 }
 
