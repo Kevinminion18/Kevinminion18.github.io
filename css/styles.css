@@ -73,8 +73,8 @@ nav a:hover {
   flex-direction: row;
   align-items: flex-start;
   justify-content: center;
-  margin-right: 105px;
-  margin-left: 105px;
+  margin-right: 50px;
+  margin-left: 50px;
   margin-bottom: 30px;
   gap: 20px;
 }
@@ -85,11 +85,17 @@ nav a:hover {
   flex-direction: column;
 }
 
+.image-container {
+  flex: 0 0 30%; /* Image container takes up 30% of the space */
+  display: flex; /* Center the image inside the container if needed */
+  justify-content: center;
+  align-items: center;
+}
+
 .profile-image {
-  flex: 0 0 30%;
   max-width: 100%;
   border-radius: 50%;
-  height: auto;
+  height: auto; /* Maintain aspect ratio */
   box-sizing: border-box;
 }
 
