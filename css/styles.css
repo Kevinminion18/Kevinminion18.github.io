@@ -257,3 +257,11 @@ body, #schedule, .has-text, td {
   align-self: flex-start;
 }
 
+.columns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.column {
+  width: 45%;
+}

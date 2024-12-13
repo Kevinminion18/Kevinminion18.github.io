@@ -1,4 +1,3 @@
-<!--
 <!DOCTYPE html>
  <html lang="en">
   <head>
@@ -30,16 +29,27 @@
       <img src="img/image.jpg" alt="Kevin Shao's profile picture" class="profile-image">
       <section>
         <p>
-          My name is Kevin Shao, and I am a 1st-year Ph.D. student in the Department of Electrical 
-	  and Computer Engineering (ECE) at the University of Washington (UW), Seattle. I recently 
+          My name is Kevin Shao, and I am a 1st-year Ph.D. student in the Department of Electrical
+	  and Computer Engineering (ECE) at the University of Washington (UW), Seattle. I recently
 	  graduated with a master's degree from UW ECE. <br> <br>
-          Prior to that, I received my bachelor's degree with Magna Cum Laude honors in ECE from 
-	  The Ohio State University (OSU), Columbus. I was also a member of the OSU Humanitarian 
+          Prior to that, I received my bachelor's degree with Magna Cum Laude honors in ECE from
+	  The Ohio State University (OSU), Columbus. I was also a member of the OSU Humanitarian
 	  Engineering Scholar Program. <br><br>
           Outside of study, I love to <a href="/gallary">travel</a> to see unqiue culture and history from different
           countries. Sketching and painting are also some great ways to make me relaxed.
         </p>
         <hr>
+        <div class="columns">
+          <div class="column">
+            <h3>Research Interests</h3>
+            <ul>
+              <li><span class="icon fas fa-flask"></span>Human-Computer Interaction</li>
+              <li><span class="icon fas fa-robot"></span>Responsible AI</li>
+              <li><span class="icon fas fa-graduation-cap"></span>Educational Technology</li>
+              <li><span class="icon fas fa-brain"></span>UX Design</li>
+              <li><span class="icon fas fa-universal-access"></span>Accessibility</li>
+            </ul>
+          </div>
         <!--- <h3 style="display: inline">Interests </h3> <span>Human-Computer Interaction, Responsible AI, Educational Technology, UX, LLMs, Diversity, Equity, and Inclusion (DEI), and Accessibility</span>--->
 	<div style="white-space: nowrap;"> <!-- Container for the header to prevent wrapping -->
         <h3 style="display: inline; margin: 0;">Interests</h3>
@@ -47,6 +57,7 @@
 	    <div style="white-space: nowrap;"> <!-- Container for the list to prevent wrapping -->
 	        <span>Human-Computer Interaction, Responsible AI, Educational Technology, UX, LLMs, Diversity, Equity, and Inclusion (DEI), and Accessibility</span>
 	    </div>
+
         <hr>
         <h3>Education</h3>
         <ul>
@@ -74,19 +85,6 @@
         </ul>
       </section>
     </section>
-    <!---<div id="chat-container">
-      <div id="chat-box-header">
-        <span>Chat with Us</span>
-        <button id="minimize">-</button>
-      </div>
-      <div id="chat-box-body">
-        <div id="messages"></div>
-      </div>
-       <div id="chat-box-footer">
-        <input type="text" id="chat-input" placeholder="Type your message here..." />
-        <button id="send-message">Send</button>
-      </div> 
-    </div>-->
 		  <footer>
       <p class="centered">
         Site created by Kevin Shao. All other attributions cited in page source.
@@ -94,132 +92,3 @@
     </footer>
 	</body>
 </html>
--->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>About Kevin Shao</title>
-  <link rel="stylesheet" type="text/css" href="/css/styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@900&family=Oswald:wght@500&display=swap" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }
-    #profile-section {
-      margin-top: 50px;
-    }
-    .profile-image {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      margin-bottom: 20px;
-    }
-    h1 {
-      font-size: 2em;
-      font-weight: bold;
-      margin: 10px 0;
-    }
-    h2 {
-      font-size: 1.2em;
-      font-weight: normal;
-      margin: 10px 0;
-      color: #555;
-    }
-    a.contact {
-      color: #0073e6;
-      text-decoration: none;
-      font-size: 1em;
-      margin-bottom: 20px;
-      display: block;
-    }
-    h3 {
-      margin-top: 30px;
-      font-size: 1.5em;
-    }
-    .columns {
-      display: flex;
-      justify-content: space-around;
-      margin-top: 40px;
-    }
-    .column {
-      width: 40%;
-      text-align: left;
-    }
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-    li {
-      margin: 10px 0;
-      font-size: 1em;
-    }
-    .icon {
-      margin-right: 10px;
-    }
-    footer {
-      margin-top: 50px;
-      padding: 20px;
-      background-color: #f9f9f9;
-    }
-    footer p {
-      font-size: 0.9em;
-      color: #777;
-    }
-  </style>
-</head>
-<body>
-  <section id="profile-section">
-    <img src="img/image.jpg" alt="Kevin Shao's profile picture" class="profile-image">
-    <h1>Kevin Shao</h1>
-    <a href="mailto:email@example.com" class="contact">email@example.com</a>
-    <h2>1st-year PhD Student at University of Washington</h2>
-    <p>Electrical and Computer Engineering Department</p>
-  </section>
-  <section>
-    <h3>About Kevin</h3>
-    <p>
-      Hi, I’m Kevin Shao, a passionate researcher in Human-Computer Interaction, Educational Technology, and AI-driven accessibility solutions. I aspire to design impactful tools to promote equity in education. My academic journey spans from earning a Bachelor’s degree at The Ohio State University to a Master’s and now pursuing a PhD at the University of Washington.
-    </p>
-  </section>
-  <section class="columns">
-    <div class="column">
-      <h3>Research Interests</h3>
-      <ul>
-        <li><span class="icon fas fa-flask"></span>Human-Computer Interaction</li>
-        <li><span class="icon fas fa-robot"></span>Responsible AI</li>
-        <li><span class="icon fas fa-graduation-cap"></span>Educational Technology</li>
-        <li><span class="icon fas fa-brain"></span>UX Design</li>
-        <li><span class="icon fas fa-universal-access"></span>Accessibility</li>
-      </ul>
-    </div>
-    <div class="column">
-      <h3>Education</h3>
-      <ul>
-        <li>
-          <span class="icon fas fa-graduation-cap"></span>
-          PhD in Electrical and Computer Engineering (Expected 2028)<br>
-          University of Washington, Seattle
-        </li>
-        <li>
-          <span class="icon fas fa-graduation-cap"></span>
-          MS in Electrical and Computer Engineering<br>
-          University of Washington, Seattle
-        </li>
-        <li>
-          <span class="icon fas fa-graduation-cap"></span>
-          BS in Electrical and Computer Engineering<br>
-          The Ohio State University, Columbus
-        </li>
-      </ul>
-    </div>
-  </section>
-  <footer>
-    <p>Site created by Kevin Shao. All other attributions cited in page source.</p>
-  </footer>
-</body>
-</html>
-
