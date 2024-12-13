@@ -181,26 +181,6 @@ body, td {
   text-align: left;
 }
 
-.column ul {
-  list-style: none;
-  padding: 0;
-}
-
-.column ul li {
-  display: flex;
-  align-items: center;
-  margin-bottom: 15px;
-  font-size: 1.1em;
-}
-
-.column h3 {
-  margin-bottom: 20px;
-}
-
-.column ul li {
-  line-height: 1.5;
-}
-
 div#profile {
   display: flex;
   flex-direction: column;
@@ -209,7 +189,7 @@ div#profile {
 }
 
 .email {
-  color: #1a73e8; /* Google blue */
+  color: #1a73e8;
   font-size: 1em;
   margin: 5px 0;
 }
@@ -217,4 +197,11 @@ div#profile {
 .email a {
   text-decoration: none;
   color: inherit;
+}
+
+.name {
+  font-size: 2.5em;
+  font-family: "Roboto", serif;
+  font-weight: 300;
+  margin: 10px 0;
 }
