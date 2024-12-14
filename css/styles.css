@@ -192,6 +192,15 @@ div#profile {
   color: inherit;
 }
 
+.teaching-card a {
+  text-decoration: none;  /* Removes underline from all links */
+  color: #1a73e8;           /* Sets the text color to black for all links */
+}
+
+.teaching-card a:visited {
+  color: #1a73e8;           /* Keeps the text color black even after the link is visited */
+}
+
 .name, div#about h1, section#teaching h2, section#research h2, section#project h2 {
   font-size: 2.5em;
   font-family: "Montserrat", sans-serif;
