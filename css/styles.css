@@ -289,7 +289,7 @@ div#profile {
 }
 
 /* Teaching cards */
-.teaching-card {
+/*.teaching-card {
   display: flex;
   align-items: center;
   padding: 20px;
@@ -297,6 +297,16 @@ div#profile {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   position: relative;
+}*/
+
+.teaching-card {
+  display: flex;
+  align-items: flex-start;
+  margin: 20px 0;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
 }
 
 .teaching-logo {
