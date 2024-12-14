@@ -232,24 +232,49 @@ div#profile {
 
 /* Timeline container styling */
 .timeline-container {
-  display: flex;
-  flex-direction: column; /* Timeline and cards side-by-side */
-  gap: 20px;
-  border-left: 5px solid #1a73e8;
+  width: 100%;
+  max-width: 1200px;
 }
 
-.teaching-card::before {
+.card1,.card2,.card3 {
+  position: relative;
+}
+
+.card1 .circle,.card2 .circle,.card3 .circle {
   position: absolute;
-  content: '';
+  left: -40px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  background-color: #1a73e8;
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  border: 2px solid #1a73e8;
-  margin: 0 auto;
-  background-color: #1a73e8;
-  top: 50%;
-  left: -31px;
-  transform: translateY(-50%);
+}
+
+.card2 .circle,.card3 .circle{
+  background-color: transparent ;
+  outline: 1px solid #c7ced8;
+
+}
+
+.card2 .lineToo,.card3 .lineToo{
+  width: 2px;
+  position: absolute;
+  left: -35px;
+  top: 0;
+  height: calc(50% - 10px);
+  background-color:  #c7ced8;
+}
+
+.card1 .line,.card2 .line{
+  width: 2px;
+  position: absolute;
+  height:calc(50% + 10px) ;
+  left: -35px;
+  background-color: #c7ced8;
+  top: calc(50% + 10px);
+  /* transform: translateY(25% ); */
 }
 
 .teaching-card {
