@@ -209,6 +209,7 @@ div#profile {
   margin-left: 50px;
   margin-bottom: 30px;
   gap: 35px;
+  background: grey;
 }
 
 .email, .position, .university {
