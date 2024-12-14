@@ -1,0 +1,41 @@
+/* styles.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+nav {
+  background: #333;
+  color: white;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+}
+
+section {
+  height: 100vh;
+  padding: 50px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.active {
+  background: #555;
+}
