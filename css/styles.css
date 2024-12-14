@@ -307,3 +307,44 @@ div#profile {
   margin-bottom: 5px;
 }
 
+/* Timeline column
+.timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+*/
+
+/*.timeline-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.circle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid #1a73e8;
+  margin: 0 auto;
+  background-color: #1a73e8; // Filled by default
+  position: relative;
+  top: 50%; // Center-aligns the circle
+  transform: translateY(-50%);
+}
+
+.circle.hollow {
+  background-color: transparent; // Makes the circle hollow
+}
+
+.line {
+  width: 2px;
+  height: calc(100% - 12px); // Dynamic height to connect circles
+  background-color: #1a73e8;
+  position: absolute;
+  top: 6px; // Adjusted to start at the bottom of the first circle
+} */
+
