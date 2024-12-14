@@ -341,7 +341,7 @@ div#profile {
 }
 
 .icon.twitter {
-  background: url('path-to-twitter-icon.png') no-repeat center center;
+  background: url('/img/Linkedin.png') no-repeat center center;
 }
 
 .icon.google-scholar {
