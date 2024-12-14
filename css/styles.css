@@ -192,7 +192,7 @@ div#profile {
   color: inherit;
 }
 
-.name, div#about h1, section#teaching h2 {
+.name, div#about h1, section#teaching h2, section#research h2 {
   font-size: 2.5em;
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
@@ -266,7 +266,7 @@ div#profile {
   left: -35px;
   top: 0;
   height: calc(50% - 10px);
-  background-color:  #c7ced8;
+  background-color: #c7ced8;
 }
 
 .card1 .line,.card2 .line{
