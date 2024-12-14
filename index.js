@@ -3,61 +3,31 @@
   window.addEventListener('load', init);
 
   function init() {
-    // Get the elements
-    let sendMessage = id('groupImage');
+    // Adjust line height dynamically to connect circles
+    updateLineHeight();
+    // Update line when window is resized to maintain the layout
+    window.addEventListener('resize', updateLineHeight);
+  }
 
-    sendMessage.addEventListener('click', function() {
-      const input = document.getElementById('chat-input');
-      const messageText = input.value.trim();
-      sendMessageToServer(messageText);
+  function updateLineHeight() {
+    const timelines = document.querySelectorAll('.timeline'); // Assumes multiple timeline elements
+    timelines.forEach((timeline, index) => {
+      if (index < timelines.length - 1) { // Ensures there is a next timeline to connect to
+        const currentCircle = timeline.querySelector('.circle');
+        const nextTimeline = timelines[index + 1];
+        const nextCircle = nextTimeline.querySelector('.circle');
+        const line = timeline.querySelector('.line');
+
+        if (currentCircle && nextCircle && line) {
+          const currentRect = currentCircle.getBoundingClientRect();
+          const nextRect = nextCircle.getBoundingClientRect();
+
+          // Calculate new height of the line
+          const newHeight = nextRect.top - currentRect.top;
+          line.style.height = `${newHeight}px`;
+          line.style.top = `${currentRect.height / 2}px`; // Adjusts starting position to middle of circle
+        }
+      }
     });
-  }
-
-  function sendMessageToServer(messageText) {
-    if (messageText !== '') {
-      // Display the user message
-      displayMessage(messageText, 'user-message');
-
-      // Clear the input field
-      document.getElementById('chat-input').value = '';
-
-      // Send the message to the server using the POST request
-      fetch('/chat-message', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ message: messageText }),
-      })
-      .then(response => response.json())
-      .then(data => {
-        // Display the chatbot's response
-        displayMessage(data.message, 'bot-message');
-      })
-      .catch((error) => {
-        console.error('Error:', error);
-      });
-    }
-  }
-
-  function displayMessage(text, className) {
-    const messageDiv = document.createElement('div');
-    messageDiv.classList.add('message', className);
-    messageDiv.textContent = text;
-    id('messages').appendChild(messageDiv);
-
-    // Scroll to the bottom of the message area to show the newest message
-    const messageArea = id('chat-box-body');
-    messageArea.scrollTop = messageArea.scrollHeight;
-  }
-
-  /**
-   * A function to return the element that has the ID attribute with the
-   * specified value.
-   * @param {string} name - element ID.
-   * @returns {object} - DOM object associated with id.
-   */
-  function id(name) {
-    return document.getElementById(name);
   }
 })();
