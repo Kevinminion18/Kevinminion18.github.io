@@ -224,24 +224,81 @@ div#profile {
   margin: 10px 0;
 }
 
-#teaching-section h2 {
+/* General styling */
+/*#teaching {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 50px;
+  gap: 35px;
+}*/
+
+#teaching h2 {
   font-size: 1.8em;
   text-align: center;
   margin-bottom: 30px;
 }
 
-/* Card styling */
+/* Timeline container styling */
+.timeline-container {
+  display: grid;
+  grid-template-columns: 40px 1fr; /* Timeline and cards side-by-side */
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Timeline column */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.timeline-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.circle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid #1a73e8;
+  margin: 0 auto;
+  background-color: #1a73e8; /* Filled by default */
+  position: relative;
+  top: 50%; /* Center-aligns the circle */
+  transform: translateY(-50%);
+}
+
+.circle.hollow {
+  background-color: transparent; /* Makes the circle hollow */
+}
+
+.line {
+  width: 2px;
+  height: calc(100% - 12px); /* Dynamic height to connect circles */
+  background-color: #1a73e8;
+  position: absolute;
+  top: 6px; /* Adjusted to start at the bottom of the first circle */
+}
+
+/* Teaching cards */
 .teaching-card {
   display: flex;
-  align-items: flex-start;
-  margin: 20px 0;
+  align-items: center;
+  padding: 20px;
   background-color: #ffffff;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  padding: 20px;
+  position: relative;
 }
 
-/* Logo styling */
 .teaching-logo {
   flex: 0 0 60px;
   margin-right: 20px;
@@ -253,7 +310,6 @@ div#profile {
   object-fit: cover;
 }
 
-/* Details styling */
 .teaching-details {
   flex: 1;
 }
@@ -287,33 +343,3 @@ div#profile {
   margin-bottom: 5px;
 }
 
-/* Timeline container */
-.timeline-container {
-  display: flex;
-  align-items: flex-start;
-  position: relative;
-}
-
-/* Timeline styling */
-.timeline {
-  flex: 0 0 40px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.circle {
-  width: 12px;
-  height: 12px;
-  background-color: #1a73e8; /* Blue color */
-  border-radius: 50%;
-  border: 2px solid #1a73e8;
-  margin: 10px 0;
-}
-
-.line {
-  width: 2px;
-  height: 60px;
-  background-color: #1a73e8;
-}
