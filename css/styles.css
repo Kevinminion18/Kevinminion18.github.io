@@ -192,21 +192,13 @@ div#profile {
   color: inherit;
 }
 
-.name, div#about h1, section#teaching h2, section#research h2 {
+.name, div#about h1, section#teaching h2, section#research h2, section#project h2 {
   font-size: 2.5em;
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   margin: 10px 0;
-}
-
-#selected-project {
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: center;
-  padding: 15px 50px;
-  gap: 35px;
 }
 
 #teaching, #research {
@@ -218,6 +210,14 @@ div#profile {
   background-color: #edededa3;
 }
 
+#project {
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 80px 30px 80px 50px;
+  gap: 35px;
+}
+
 .email, .position, .university {
   font-size: 1.25em;
   font-family: "Montserrat", sans-serif;
@@ -227,7 +227,7 @@ div#profile {
   margin: 10px 0;
 }
 
-#teaching h2, #research h2 {
+#teaching h2, #research h2, #project h2 {
   font-size: 1.8em;
   text-align: center;
   margin-bottom: 30px;
