@@ -184,12 +184,10 @@ div#profile {
 
 .name, div#about h1 {
   font-size: 2.5em;
-  font-family: "Encode Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
   margin: 10px 0;
 }
 
@@ -215,12 +213,10 @@ div#profile {
 
 .email, .position, .university {
   font-size: 1.25em;
-  font-family: "Encode Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
   margin: 10px 0;
 }
 
