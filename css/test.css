@@ -22,187 +22,6 @@ img {
   height: auto;
 }
 
-#nav-bar h1 {
-  margin: 20px;
-  margin-left: 0px;
-}
-
-#nav-bar {
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: white;
-  display: flex;
-}
-
-nav {
-  margin-left: auto;
-  margin-right: 30px;
-}
-
-nav a {
-  float: left;
-  display: block;
-  text-align: center;
-  padding: 20px 10px;
-  color: black;
-  text-decoration: none;
-  font-family: 'Oswald', sans-serif;
-}
-
-nav a:hover {
-  background-color: #f2f2f2;
-}
-
-#profile-section {
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: center;
-  margin-right: 50px;
-  margin-left: 50px;
-  margin-bottom: 30px;
-  gap: 35px;
-}
-
-div#about {
-  flex: 0 0 65%;
-  display: flex;
-  flex-direction: column;
-}
-
-.image-container {
-  flex: 0 0 35%; /* Image container takes up 30% of the space */
-  display: flex; /* Center the image inside the container if needed */
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.profile-image {
-  max-width: 100%;
-  border-radius: 50%;
-  height: auto; /* Maintain aspect ratio */
-  box-sizing: border-box;
-}
-
-#profile-section li, #profile-section {
-  display: flex;
-}
-
-#profile-section, header {
-  align-items: center;
-}
-
-#profile-section ul {
-  padding-inline-start: 5px;
-}
-
-#profile-section li {
-  align-items: start;
-}
-
-.fa-solid.fa-robot, .fas.fa-graduation-cap {
-  font-size: 26.5px;
-  width: 33px;
-  height: 26.5px;
-  margin-right: 15px;
-}
-
-.course, .institution {
-  margin: 0;
-}
-
-.course {
-  margin-bottom: 5px; /* Space between institution and course */
-}
-
-.institution {
-  font-size: 15px;
-}
-
-#profile-section {
-  margin-top: 100px;
-}
-
-#profile-section li, .controls {
-  margin-bottom: 20px;
-}
-
-.controls * {
-  margin-right: 10px;
-}
-
-.shaded {
-  background-color: grey;
-}
-
-.details-container {
-  display: inline-block;
-}
-
-.centered {
-  text-align: center;
-}
-
-body, td {
-  position: relative;
-}
-
-.edu-interest {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-}
-
-.column1 {
-  flex: 0 0 45%;
-  text-align: left;
-}
-
-.column2 {
-  flex: 0 0 55%;
-  text-align: left;
-}
-
-div#profile {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.email, .university {
-  color: #1a73e8;
-  margin: 5px 0;
-}
-
-.email a, .university a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.name, div#about h1 {
-  font-size: 2.5em;
-  font-family: "Encode Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-  margin: 10px 0;
-}
-
-#selected-project {
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: center;
-  margin-right: 50px;
-  margin-left: 50px;
-  margin-bottom: 30px;
-  gap: 35px;
-}
-
 #teaching {
   flex-direction: row;
   align-items: flex-start;
@@ -213,26 +32,6 @@ div#profile {
   gap: 35px;
 }
 
-.email, .position, .university {
-  font-size: 1.25em;
-  font-family: "Encode Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-  margin: 10px 0;
-}
-
-/* General styling */
-/*#teaching {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 30px 50px;
-  gap: 35px;
-}*/
-
 #teaching h2 {
   font-size: 1.8em;
   text-align: center;
@@ -242,7 +41,7 @@ div#profile {
 /* Timeline container styling */
 .timeline-container {
   display: grid;
-  grid-template-columns: 40px 1fr; /* Timeline and cards side-by-side */
+  grid-template-columns: 40px 1fr;
   gap: 20px;
   width: 100%;
   max-width: 1200px;
@@ -270,14 +69,14 @@ div#profile {
   border-radius: 50%;
   border: 2px solid #1a73e8;
   margin: 0 auto;
-  background-color: #1a73e8; /* Filled by default */
+  background-color: #1a73e8;
   position: relative;
-  top: 50%; /* Center-aligns the circle */
+  top: 50%;
   transform: translateY(-50%);
 }
 
 .circle.hollow {
-  background-color: transparent; /* Makes the circle hollow */
+  background-color: transparent;
 }
 
 .line {
