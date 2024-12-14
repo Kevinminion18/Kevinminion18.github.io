@@ -365,6 +365,6 @@ div#profile {
 }
 
 .icon.cv {
-  background: url('path-to-cv-icon.png') no-repeat center center;
+  background: url('/img/cv.png') no-repeat center center;
 }
 
