@@ -248,6 +248,7 @@ div#profile {
   margin: 0 auto;
   background-color: #1a73e8;
   top: 50%;
+  left: -31px;
   transform: translateY(-50%);
 }
 
