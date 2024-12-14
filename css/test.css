@@ -40,51 +40,53 @@ img {
 
 /* Timeline container styling */
 .timeline-container {
-  display: grid;
+  /* display: grid;
   grid-template-columns: 40px 1fr;
-  gap: 20px;
+  gap: 20px; */
   width: 100%;
   max-width: 1200px;
 }
 
-/* Timeline column */
-.timeline {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.card1,.card2,.card3 {
   position: relative;
 }
 
-.timeline-item {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100%;
-}
+.card1 .circle,.card2 .circle,.card3 .circle {
+  position: absolute;
+  left: -40px;
+  top: 50%;
+  transform: translateY(-50%);
 
-.circle {
+  background-color: #1a73e8;
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  border: 2px solid #1a73e8;
-  margin: 0 auto;
-  background-color: #1a73e8;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
-.circle.hollow {
-  background-color: transparent;
+.card2 .circle,.card3 .circle{
+  background-color: transparent ;
+  outline: 1px solid #c7ced8;
+
 }
 
-.line {
+.card2 .lineToo,.card3 .lineToo{
   width: 2px;
-  height: calc(100% - 12px); /* Dynamic height to connect circles */
-  background-color: #1a73e8;
   position: absolute;
-  top: 6px; /* Adjusted to start at the bottom of the first circle */
+  left: -34px;
+  top: 0;
+  height: calc(50% - 10px);
+  background-color:  #c7ced8;
+}
+
+.card1 .line,.card2 .line{
+  width: 2px;
+  position: absolute;
+  /* 这个30是40-10 40是那个板块距离，10是top值加的10 */
+  height:calc(50% + 10px) ;
+  left: -34px;
+  background-color: #c7ced8;
+  top: calc(50% + 10px);
+  /* transform: translateY(25% ); */
 }
 
 /* Teaching cards */
@@ -96,6 +98,7 @@ img {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   position: relative;
+  margin-bottom: 20px;
 }
 
 .teaching-logo {
