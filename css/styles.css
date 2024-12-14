@@ -1,7 +1,7 @@
 body {
   background-color: white;
   font-family: "Helvetica", sans-serif;
-  margin: 20px;
+  margin: 0px;
 }
 
 h1, h2, h3 {
@@ -34,6 +34,7 @@ img {
   width: 100%;
   background-color: white;
   display: flex;
+  padding: 0 20px;
 }
 
 nav {
@@ -59,9 +60,9 @@ nav a:hover {
   flex-direction: row;
   align-items: flex-start;
   justify-content: center;
-  margin-right: 50px;
-  margin-left: 50px;
-  margin-bottom: 30px;
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-bottom: 15px;
   gap: 35px;
 }
 
@@ -195,9 +196,7 @@ div#profile {
   flex-direction: row;
   align-items: flex-start;
   justify-content: center;
-  margin-right: 50px;
-  margin-left: 50px;
-  margin-bottom: 30px;
+  padding: 15px 50px;
   gap: 35px;
 }
 
@@ -205,9 +204,7 @@ div#profile {
   flex-direction: row;
   align-items: flex-start;
   justify-content: center;
-  margin-right: 50px;
-  margin-left: 50px;
-  margin-bottom: 30px;
+  padding: 15px 50px;
   gap: 35px;
 }
 
