@@ -204,10 +204,7 @@ div#profile {
   flex-direction: row;
   align-items: flex-start;
   justify-content: center;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-top: 80px;
-  padding-bottom: 60px;
+  padding: 80px 30px 80px 50px;
   gap: 35px;
   background-color: #edededa3;
 }
@@ -278,11 +275,11 @@ div#profile {
   display: flex;
   align-items: flex-start;
   position: relative;
-  margin: 20px 20px;
+  margin: 20px 0px 20px 20px;
   background-color: #ffffff;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  padding: 20px;
+  padding: 20px 20px 20px 20px;
 }
 
 .teaching-logo {
@@ -327,5 +324,47 @@ div#profile {
 .teaching-details ul li {
   font-size: 0.9em;
   margin-bottom: 5px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px; /* Space between icons */
+  justify-content: center; /* Center the icons */
+  margin-top: 15px;
+}
+
+.social-icons .icon {
+  width: 30px; /* Set the size of the icons */
+  height: 30px;
+  background-size: cover;
+  display: inline-block;
+}
+
+.icon.twitter {
+  background: url('path-to-twitter-icon.png') no-repeat center center;
+}
+
+.icon.google-scholar {
+  background: url('path-to-google-scholar-icon.png') no-repeat center center;
+}
+
+.icon.github {
+  background: url('path-to-github-icon.png') no-repeat center center;
+}
+
+.icon.linkedin {
+  background: url('path-to-linkedin-icon.png') no-repeat center center;
+}
+
+.icon.facebook {
+  background: url('path-to-facebook-icon.png') no-repeat center center;
+}
+
+.icon.instagram {
+  background: url('path-to-instagram-icon.png') no-repeat center center;
+}
+
+.icon.cv {
+  background: url('path-to-cv-icon.png') no-repeat center center;
 }
 
