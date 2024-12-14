@@ -256,6 +256,16 @@ div#profile {
   position: relative;
 }
 
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  z-index: -1;
+}
+
 .timeline-item {
   position: relative;
   display: flex;
