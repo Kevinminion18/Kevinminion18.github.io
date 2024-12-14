@@ -224,15 +224,6 @@ div#profile {
   margin: 10px 0;
 }
 
-/* General styling */
-/*#teaching {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 30px 50px;
-  gap: 35px;
-}*/
-
 #teaching h2 {
   font-size: 1.8em;
   text-align: center;
@@ -248,71 +239,23 @@ div#profile {
 }
 
 .teaching-card::before {
+  position: absolute;
+  content: '';
   width: 12px;
   height: 12px;
   border-radius: 50%;
   border: 2px solid #1a73e8;
   margin: 0 auto;
   background-color: #1a73e8;
-  position: relative;
   top: 50%;
   transform: translateY(-50%);
 }
 
-/* Timeline column
-.timeline {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-}
-
-.timeline::after {
-  content: '';
-  position: absolute;
-  width: 6px;
-  height: 100%;
-  top: 0;
-  left: 50%;
-  z-index: -1;
-}*/
-
-/*.timeline-item {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100%;
-}
-
-.circle {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  border: 2px solid #1a73e8;
-  margin: 0 auto;
-  background-color: #1a73e8; // Filled by default
-  position: relative;
-  top: 50%; // Center-aligns the circle
-  transform: translateY(-50%);
-}
-
-.circle.hollow {
-  background-color: transparent; // Makes the circle hollow
-}
-
-.line {
-  width: 2px;
-  height: calc(100% - 12px); // Dynamic height to connect circles
-  background-color: #1a73e8;
-  position: absolute;
-  top: 6px; // Adjusted to start at the bottom of the first circle
-} */
-
 .teaching-card {
   display: flex;
   align-items: flex-start;
-  margin: 20px 0;
+  position: relative;
+  margin: 20px 20px;
   background-color: #ffffff;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
