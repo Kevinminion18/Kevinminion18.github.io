@@ -209,7 +209,7 @@ div#profile {
   gap: 35px;
 }
 
-#teaching {
+#teaching, #research {
   flex-direction: row;
   align-items: flex-start;
   justify-content: center;
@@ -227,7 +227,7 @@ div#profile {
   margin: 10px 0;
 }
 
-#teaching h2 {
+#teaching h2, #research h2 {
   font-size: 1.8em;
   text-align: center;
   margin-bottom: 30px;
@@ -256,9 +256,8 @@ div#profile {
 }
 
 .card2 .circle,.card3 .circle{
-  background-color: transparent ;
+  background-color: transparent;
   outline: 1px solid #c7ced8;
-
 }
 
 .card2 .lineToo,.card3 .lineToo{
