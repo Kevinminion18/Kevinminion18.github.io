@@ -183,7 +183,7 @@ div#profile {
   color: inherit;
 }
 
-.name, div#about h1 {
+.name, div#about h1, div#teaching h2 {
   font-size: 2.5em;
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
@@ -204,7 +204,10 @@ div#profile {
   flex-direction: row;
   align-items: flex-start;
   justify-content: center;
-  padding: 15px 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 55px;
+  padding-bottom: 35px;
   gap: 35px;
   background-color: #edededa3;
 }
