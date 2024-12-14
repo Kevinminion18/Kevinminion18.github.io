@@ -307,16 +307,16 @@ div#profile {
   margin-bottom: 5px;
 }
 
-/* Timeline column
+/* Timeline column*/
 .timeline {
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
 }
-*/
 
-/*.timeline-item {
+
+.timeline-item {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -330,21 +330,21 @@ div#profile {
   border-radius: 50%;
   border: 2px solid #1a73e8;
   margin: 0 auto;
-  background-color: #1a73e8; // Filled by default
+  background-color: #1a73e8;
   position: relative;
-  top: 50%; // Center-aligns the circle
+  top: 50%;
   transform: translateY(-50%);
 }
 
 .circle.hollow {
-  background-color: transparent; // Makes the circle hollow
+  background-color: transparent;
 }
 
 .line {
   width: 2px;
-  height: calc(100% - 12px); // Dynamic height to connect circles
+  height: calc(100% - 12px);
   background-color: #1a73e8;
   position: absolute;
-  top: 6px; // Adjusted to start at the bottom of the first circle
-} */
+  top: 6px;
+}
 
