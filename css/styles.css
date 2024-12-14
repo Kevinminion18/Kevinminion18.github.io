@@ -206,7 +206,7 @@ div#profile {
   justify-content: center;
   padding: 15px 50px;
   gap: 35px;
-  background-color: #c7ced8;
+  background-color: #edededa3;
 }
 
 .email, .position, .university {
