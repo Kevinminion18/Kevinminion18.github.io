@@ -1,7 +1,7 @@
 // script.js
 document.addEventListener("DOMContentLoaded", function() {
   const sections = document.querySelectorAll("section");
-  const navLinks = document.querySelectorAll("nav ul li a");
+  const navLinks = document.querySelectorAll("nav a");
 
   function setActiveLink(section) {
       navLinks.forEach(link => {
