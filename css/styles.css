@@ -22,29 +22,33 @@ h3 {
   text-align: justify;
 }
 
-img {
+#profile-section img {
   width: 275px;
   height: auto;
 }
 
-#nav-bar h1 {
-  margin: 20px;
-  margin-left: 0px;
+header {
+  width: 100%;
+  background-color: white; /* Set the background color for the header */
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional: Adds shadow for better visibility */
 }
 
 #nav-bar {
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: white;
   display: flex;
-  padding: 0 20px;
-  z-index: 1000;
+  align-items: center;
+  padding: 20px 20px;
+}
+
+#nav-bar h1 {
+  margin-left: 0px;
+  padding-right: 40px;
 }
 
 nav {
-  margin-left: auto;
+  margin-left: 0;
   margin-right: 30px;
 }
 
@@ -52,25 +56,26 @@ nav a {
   float: left;
   display: block;
   text-align: center;
-  padding: 20px 10px;
+  padding: 0px 10px;
   color: black;
   text-decoration: none;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Helvetica", sans-serif;
+  font-weight: bold;
 }
 
 nav a:hover {
-  background-color: #f2f2f2;
+  color: #1a73e8;
 }
 
 .active {
-  background: #f2f2f2;
+  color: #1a73e8;
 }
 
 #profile-section {
   flex-direction: row;
   align-items: flex-start;
   justify-content: center;
-  padding-right: 50px;
+  padding-right: 100px;
   padding-left: 50px;
   padding-bottom: 50px;
   gap: 35px;
@@ -202,7 +207,7 @@ div#profile {
   color: #1a73e8;           /* Keeps the text color black even after the link is visited */
 }
 
-.name, div#about h1, section#teaching h2, section#research h2, section#project h2, section#publications h2 {
+.name, div#about h1, section#teaching h2, section#research h2, section#project h2, section#publications h2, section#talks h2 {
   font-size: 2.5em;
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
@@ -220,7 +225,7 @@ div#profile {
   background-color: #edededa3;
 }
 
-#project, #publications {
+#project {
   flex-direction: row;
   align-items: flex-start;
   justify-content: center;
@@ -237,7 +242,7 @@ div#profile {
   margin: 10px 0;
 }
 
-#teaching h2, #research h2, #project h2, #publications h2 {
+#teaching h2, #research h2, #project h2{
   font-size: 1.8em;
   text-align: center;
   margin-bottom: 30px;
@@ -384,5 +389,144 @@ div#profile {
 
 .icon.cv {
   background: url('/img/cv.png') no-repeat center center;
+}
+
+.project-card {
+  display: flex;
+  background-color: white;
+  border-radius: 8px;
+  /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
+  padding: 20px 0px 60px 0px;
+  overflow: hidden;
+}
+
+.project-logo {
+  flex: 0 0 40%;
+  padding: 0px 20px;
+  align-content: center;
+}
+
+.project-logo img {
+  height: auto; /* Adjust size accordingly */
+  max-width: 100%;
+}
+
+.project-content {
+  padding: 0px 20px;
+  flex-grow: 1;
+  align-content: center;
+}
+
+.project-links button {
+  margin-right: 10px;
+  padding: 10px 20px;
+  background-color: #007BFF; /* Bootstrap primary color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.project-links button:hover {
+  background-color: #0056b3; /* Darker shade for hover effect */
+}
+
+#publications {
+  display: flex; /* Aligns child elements (left and right sections) horizontally */
+  background-color: white;
+  padding: 80px 100px 80px 50px;
+  align-items: flex-start; /* Aligns items at the start of the flex container */
+}
+
+#talks {
+  display: flex; /* Aligns child elements (left and right sections) horizontally */
+  background-color: white;
+  padding: 80px 100px 80px 50px;
+  align-items: flex-start; /* Aligns items at the start of the flex container */
+  background-color: #edededa3;
+}
+
+.left-section {
+  flex-basis: 30%; /* Takes up 30% of the flex container */
+  padding-right: 80px; /* Adds some space between the sections */
+}
+
+.right-section {
+  flex-grow: 1; /* Takes the remaining space in the flex container */
+}
+
+#publications li p {
+  display: inline;
+  margin: 0;
+  font-size: 18px;
+}
+
+#publications ul {
+  list-style: none;
+  padding: 0px;
+}
+
+#publications li {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+#publications li:last-child {
+  border-bottom: none;
+}
+
+#publications .links {
+  padding-top: 10px;
+}
+
+#publications .links a {
+  text-decoration: none;
+  color: #007BFF;
+  margin-right: 10px;
+}
+
+#publications .links a:hover {
+  text-decoration: underline;
+}
+
+#publications .see-all {
+  display: block;
+  text-decoration: none;
+  color: #007BFF;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+#publications .see-all:hover {
+  text-decoration: underline;
+}
+
+#publications h2, #talks h2 {
+  font-size: 1.8em;
+  text-align: left-align;
+  margin-bottom: 30px;
+}
+
+footer {
+  display: flex; /* Aligns child elements (left and right sections) horizontally */
+  padding: 10px 50px 10px 50px;
+  justify-content: space-between;
+  align-items: center; /* Aligns items at the start of the flex container */
+}
+
+.footer-section {
+  flex: 1; /* Allows each section to grow equally */
+  display: flex;
+  justify-content: center; /* Center the content of each section */
+  align-items: center;
+}
+
+.footer-section.left {
+  justify-content: flex-start; /* Centers the content */
+}
+
+.footer-section.right {
+  justify-content: flex-end; /* Align the content to the right */
+  visibility: hidden; /* Make the right spacer invisible */
 }
 

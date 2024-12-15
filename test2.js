@@ -36,3 +36,12 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+  var lastModifiedDate = new Date(document.lastModified);
+  var formattedDate = lastModifiedDate.toLocaleDateString('en-US', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
+  });
+  document.getElementById('update-date').textContent = formattedDate;
+});
