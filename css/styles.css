@@ -181,6 +181,17 @@ body, td {
   text-align: left;
 }
 
+#profile-section .column1 li {
+  display: flex;
+  align-items: center;
+}
+
+#profile-section .details-container .course {
+  display: flex;
+  align-items: center;
+  margin: 0px;
+}
+
 div#profile {
   display: flex;
   flex-direction: column;
