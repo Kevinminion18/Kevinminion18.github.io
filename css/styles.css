@@ -438,6 +438,19 @@ div#profile {
   cursor: pointer;
 }
 
+.project-content a {
+  text-decoration: none;
+  color: black;
+}
+
+.project-content a:visited {
+  color: black;
+}
+
+.project-content a:hover {
+  text-decoration: underline;
+}
+
 .project-links button:hover {
   background-color: #0056b3; /* Darker shade for hover effect */
 }
@@ -540,4 +553,3 @@ footer {
   justify-content: flex-end; /* Align the content to the right */
   visibility: hidden; /* Make the right spacer invisible */
 }
-

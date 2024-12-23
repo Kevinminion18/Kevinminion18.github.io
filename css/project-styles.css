@@ -1,0 +1,266 @@
+body {
+  background-color: white;
+  font-family: "Helvetica", sans-serif;
+  margin: 0px;
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+  margin: 0;
+}
+
+h3 {
+  margin-bottom: 15px;
+}
+
+.justified {
+  text-align: justify;
+}
+
+#profile-section img {
+  width: 275px;
+  height: auto;
+}
+
+header {
+  width: 100%;
+  background-color: white; /* Set the background color for the header */
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional: Adds shadow for better visibility */
+}
+
+#nav-bar {
+  display: flex;
+  align-items: center;
+  padding: 20px 20px;
+}
+
+#nav-bar h1 {
+  margin-left: 0px;
+  padding-right: 40px;
+}
+
+nav {
+  margin-left: 0;
+  margin-right: 30px;
+}
+
+nav a {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 0px 10px;
+  color: black;
+  text-decoration: none;
+  font-family: "Helvetica", sans-serif;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #1a73e8;
+}
+
+.active {
+  color: #1a73e8;
+}
+
+footer {
+  display: flex; /* Aligns child elements (left and right sections) horizontally */
+  padding: 10px 50px 10px 50px;
+  justify-content: space-between;
+  align-items: center; /* Aligns items at the start of the flex container */
+}
+
+.footer-section {
+  flex: 1; /* Allows each section to grow equally */
+  display: flex;
+  justify-content: center; /* Center the content of each section */
+  align-items: center;
+}
+
+.footer-section.left {
+  justify-content: flex-start; /* Centers the content */
+}
+
+.footer-section.right {
+  justify-content: flex-end; /* Align the content to the right */
+  visibility: hidden; /* Make the right spacer invisible */
+}
+
+#project-page {
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 80px 300px 80px 300px;
+  gap: 35px;
+}
+
+#project-page h2, #project-page h3, #project-page h4, #project-page p, #project-page .title{
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#project-page h2 {
+  font-size: 2.5em;
+  margin-top: 40px;
+  margin-bottom: 5px;
+}
+
+#project-page h3{
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#project-page h4 {
+  font-size: 1em;
+  margin-top: 20px;
+}
+
+#project-page img {
+  width: 100%;
+  height: 450px;
+}
+
+#project-page p{
+  font-size: 1em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+#project-page .title{
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+#project-page .subtitle{
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+#project-page .proj2-intro {
+  width: 100%; /* Adjust based on your design needs */
+  overflow: hidden; /* Clearfix for floated elements */
+}
+
+#project-page .logo {
+  float: right; /* Floats the logo to the left */
+  margin-right: 10px; /* Adds spacing between the logo and the text */
+  margin-bottom: 5px; /* Space below the logo if the text is longer than the logo height */
+  width: 125px; /* Specify your desired width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+#project-page .image-container {
+  display: flex; /* Enables flexbox */
+  justify-content: space-between; /* Distributes space between the images */
+  align-items: flex-start;
+}
+
+#project-page figure {
+  width: 45%; /* Sets width of each image to 45% of the container */
+  height: auto; /* Maintains aspect ratio */
+  margin: 5px; /* Optional: adds some space around the images */
+}
+
+#project-page .image {
+  width: 100%; /* Makes the image fill the figure element */
+  height: auto; /* Maintains aspect ratio */
+  padding-bottom: 5px;
+}
+
+#project-page figcaption {
+  color: #666; /* Sets the color of the caption text */
+  font-size: 14px; /* Sets the font size of the caption */
+}
+
+#project-page .full {
+  width: 100%; /* Makes the image fill the figure element */
+  height: auto; /* Maintains aspect ratio */
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#project-page .buttons {
+  margin: 30px 0px;
+}
+
+#project-page .button {
+  padding: 10px;
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+#project-page .button:hover {
+  background-color: rgb(232, 224, 224);
+}
+
+.quote-card {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  margin: 0px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px 20px 20px 20px;
+}
+
+#project-page .tag-container {
+  display: flex;
+  gap: 10px;
+}
+
+#project-page .tag {
+  background-color: #cccccc;
+  border-radius: 3px;
+  padding: 5px 10px;
+  font-size: 14px;
+  display: inline-block;
+  outline: none;
+}
+
+.image-text-container {
+  display: flex; /* Enables flexbox layout */
+  align-items: flex-start; /* Aligns children vertically in the center */
+  justify-content: space-around; /* Distributes space around items */
+  width: 100%; /* Container takes full width of its parent */
+}
+
+#project-page .image-50 {
+  width: 50%; /* Image takes up 50% of the container width */
+  height: auto; /* Maintains the image's aspect ratio */
+}
+
+.text-50 {
+  width: 50%; /* Text block takes up the other 50% of the width */
+  padding: 0 20px; /* Adds some padding inside the text container */
+  font-family: "Montserrat", sans-serif;
+}
+
+.text-50 p {
+  text-align: justify; /* Justifies the text within the paragraph for better readability */
+}
+
+li {
+  font-family: "Montserrat", sans-serif;
+}
