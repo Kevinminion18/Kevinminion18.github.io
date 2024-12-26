@@ -553,3 +553,12 @@ footer {
   justify-content: flex-end; /* Align the content to the right */
   visibility: hidden; /* Make the right spacer invisible */
 }
+
+#intro {
+  font-size: 1.2em;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5;
+}
