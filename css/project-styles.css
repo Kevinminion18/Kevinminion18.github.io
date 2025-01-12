@@ -167,6 +167,14 @@ footer {
   height: auto; /* Maintain aspect ratio */
 }
 
+#project-page .logo1 {
+  float: left; /* Floats the logo to the left */
+  margin-right: 10px; /* Adds spacing between the logo and the text */
+  margin-bottom: 5px; /* Space below the logo if the text is longer than the logo height */
+  width: 225px; /* Specify your desired width */
+  height: auto; /* Maintain aspect ratio */
+}
+
 #project-page .image-container {
   display: flex; /* Enables flexbox */
   justify-content: space-between; /* Distributes space between the images */
