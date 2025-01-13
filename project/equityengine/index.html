@@ -67,7 +67,7 @@
       </p>-->
 
       <h3 class="title">Key Milestones</h3>
-      <ul>
+      <ul style="line-height: 1.5;">
         <li>
           Phase 1: Literature Review: Identify existing research gaps, particularly in AI-driven tools
           for post-secondary STEM education for SLWD. This phase focuses on understanding the current
@@ -117,10 +117,25 @@
       <h3 class="title">Archive Prototype</h3>
       <img src="/img/arch-chat.png" alt="TBD">
       <p>
-
+        The technical objectives of the archive prototype were centered around effectively implementing
+        the Retrieval-Augmented Generation (RAG) architecture, a sophisticated framework designed to
+        enhance the chatbot's responsiveness and accuracy in providing user-specific information sourced
+        from university websites.
       </p>
-
-
+      <ul style="line-height: 1.5;">
+        <li>
+          LangChain's OpenAIEmbeddings was used to convert preprocessed text into high-dimensional vectors
+          that capture semantic context, ensuring accurate and relevant chatbot responses. For efficient
+          storage and retrieval, the team evaluated robust vector stores like FAISS and Pinecone. Factors
+          such as deployment ease and integration capabilities will guide our selection, optimizing the
+          chatbot's ability to provide timely and precise assistance.
+        </li>
+        <li>
+          The retrieval-based chatbot was built with LangChain's RetrievalQAWithSourcesChain, utilizing
+          vector similarity for accurate, context-aware answers. The user interface is developed
+          using Streamlit to ensure smooth and intuitive interactions, enhancing real-time responsiveness.
+        </li>
+      </ul>
     </section>
 
 
