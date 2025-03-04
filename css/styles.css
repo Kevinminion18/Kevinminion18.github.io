@@ -471,7 +471,7 @@ div#profile {
 }
 
 .left-section {
-  flex-basis: 30%; /* Takes up 30% of the flex container */
+  flex-basis: 30%;  /*Takes up 30% of the flex container */
   padding-right: 80px; /* Adds some space between the sections */
 }
 
@@ -479,18 +479,18 @@ div#profile {
   flex-grow: 1; /* Takes the remaining space in the flex container */
 }
 
-#publications li p {
+#publications li p, #talks li p {
   display: inline;
   margin: 0;
   font-size: 18px;
 }
 
-#publications ul {
+#publications ul, #talks ul {
   list-style: none;
   padding: 0px;
 }
 
-#publications li {
+#publications li, #talks ul {
   padding: 10px 0;
   border-bottom: 1px solid #eee;
 }
@@ -499,11 +499,11 @@ div#profile {
   border-bottom: none;
 }
 
-#publications .links {
+#publications .links, #talks .links {
   padding-top: 10px;
 }
 
-#publications .links a {
+#publications .links a, #talks .links a  {
   text-decoration: none;
   color: #007BFF;
   margin-right: 10px;
@@ -561,4 +561,69 @@ footer {
   font-weight: 400;
   font-style: normal;
   line-height: 1.5;
+}
+
+.tk-subtitle {
+  padding-top: 10px;
+  font-size: 16px;
+}
+
+.tk-datLoc {
+  padding-top: 10px;
+  font-size: 14px;
+  color: #666;
+}
+
+
+#talks-section {
+  display: flex; /* Aligns child elements (left and right sections) horizontally */
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.talk-card {
+  display: flex;
+  /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
+  align-items: flex-start;
+  justify-content: space-between;
+  /*flex-direction: row;*/
+  /*overflow: hidden;*/
+ /* width: 100%;*/
+}
+
+.talk-content {
+  padding: 0px 20px 0px 0px;
+  margin: 0px;
+  width: 70%;
+  overflow: auto;
+  /*align-content: center;*/
+}
+
+section#talk h2 {
+  width: 276px;
+  padding: 0px;
+}
+
+.leftt-section{
+  width: 276px;
+  padding-right: 80px; /* Adds some space between the sections */
+}
+
+.talk-content, .talk-img {
+  display: flex;
+  flex-direction: column; /* Stacks content vertically inside each section */
+  justify-content: center; /* Centers content vertically */
+}
+
+.talk-img {
+  flex: 1; /* Smaller grow factor, takes less space */
+  /*align-self: stretch;  Stretches to fill available vertical space */
+}
+
+.talk-img img {
+  max-width: 100%; /* Limit the image's maximum width to 100% of its container */
+  max-height: 100%; /* Limit the image's maximum height to 100% of its container */
+  height: auto; /* Maintain aspect ratio */
+  width: auto; /* Maintain aspect ratio */
+  /*align-self: flex-end;  Aligns the image to the end of the container */
 }

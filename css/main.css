@@ -128,3 +128,28 @@ h2 {
     color:green;
     text-align:center;
 }
+
+.tk-details {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.tk-title {
+    font-size: 24px;
+    color: #333;
+}
+
+.tk-subtitle {
+    font-size: 18px;
+    color: #666;
+}
+
+.tk-datLoc {
+    font-size: 16px;
+    color: #666;
+}
+
+.tk-location {
+    font-size: 16px;
+    color: #666;
+  }
