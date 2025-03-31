@@ -379,7 +379,7 @@ div#profile {
 }
 
 .icon.google-scholar {
-  background: url('path-to-google-scholar-icon.png') no-repeat center center;
+  background: url('/img/google-scholar.png') no-repeat center center;
 }
 
 .icon.github {
